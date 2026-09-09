@@ -1,0 +1,40 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+**/key.properties
+**/*.jks
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+target/
+dist/
+build/
+*.jar
+*.war
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+**/.dart_tool/
+**/build/
+**/target/
+**/coverage/
+**/uploads/*
+!**/uploads/.gitkeep
+**/*.iml

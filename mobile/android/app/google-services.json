@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "761906794313",
+    "project_id": "campus-mart-12292",
+    "storage_bucket": "campus-mart-12292.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761906794313:android:8d82c048b8224f6dce9498",
+        "android_client_info": {
+          "package_name": "com.mycampusmart.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761906794313-i26bfvqourj4uqeic0m79bttcjv7rdn9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycampusmart.app",
+            "certificate_hash": "05e5b2cd776e78b64899acb599ce2579adf6b2bf"
+          }
+        },
+        {
+          "client_id": "761906794313-jf68rjva3c9m0kit5j34t1ofdnhh1a0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_x8FJ1jsr21hyD1kJ6deLMr4dHW960aA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761906794313-jf68rjva3c9m0kit5j34t1ofdnhh1a0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

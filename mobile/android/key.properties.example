@@ -1,0 +1,4 @@
+storeFile=app/upload-keystore.jks
+storePassword=replace-with-strong-password
+keyAlias=campusmartupload
+keyPassword=replace-with-same-strong-password

@@ -1,0 +1,14 @@
+-- Migration: V5_add_missing_indexes.sql
+-- Description: Add performance optimization indexes to core tables
+
+-- Add indexes to frequently queried columns in core tables
+CREATE INDEX IF NOT EXISTS idx_messages_sender_created ON messages (sender_id, created_at);
+CREATE INDEX IF NOT EXISTS idx_messages_receiver_created ON messages (receiver_id, created_at);
+CREATE INDEX IF NOT EXISTS idx_payment_orders_status_created ON payment_orders (status, created_at);
+CREATE INDEX IF NOT EXISTS idx_items_status_created ON items (status, created_at);
+CREATE INDEX IF NOT EXISTS idx_students_role_created ON students (role, created_at);
+CREATE INDEX IF NOT EXISTS idx_offers_item_id ON offers (item_id);
+CREATE INDEX IF NOT EXISTS idx_offers_buyer_id ON offers (buyer_id);
+CREATE INDEX IF NOT EXISTS idx_wishlists_student_id ON wishlists (student_id);
+
+

@@ -1,0 +1,23 @@
+package com.campusmart.repository;
+
+import com.campusmart.model.Transaction;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface TransactionRepository extends JpaRepository<Transaction, Long> {
+
+    List<Transaction> findByBuyerIdOrderByCreatedAtDesc(Long buyerId);
+
+    List<Transaction> findBySellerIdOrderByCreatedAtDesc(Long sellerId);
+
+    boolean existsByBuyerIdAndSellerIdAndItemIdAndStatus(
+        Long buyerId,
+        Long sellerId,
+        Long itemId,
+        Transaction.TransactionStatus status
+    );
+
+}
